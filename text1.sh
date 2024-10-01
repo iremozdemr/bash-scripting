@@ -2,6 +2,10 @@
 
 #bash = bourne again shell:
 #sh-compatible
+#command language interpreter
+
+#shell:
+#macro processor
 
 #shebang (#!):
 #character sequence consists of # and !
@@ -14,14 +18,25 @@
 # #!/bin/bash
 # #!/usr/bin/env bash
 
-#which bash
-#bash interpreter'ın nerede olduğunu gösterir
-
 #chmod +x text.sh
 #dosyayı executable yapar
 
 #./text.sh
 #dosyayı çalıştırır
+
+#bash text.sh
+#dosyayı executable yapmaya gerek kalmadan
+#shebang belirtmeye gerek kalmadan
+#dosyayı çalıştırır
+
+#cd -
+#bir önceki bulunulan dizine gider
+
+#cd
+#home dizinine gider
+
+#cd ~
+#home dizinine gider
 
 echo hello world!
 
