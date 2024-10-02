@@ -14,7 +14,6 @@ echo $ABC $_ABC
 # a-z A-Z
 # underscore
 
-
 variable1="4"
 variable2="irem"
 

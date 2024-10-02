@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 echo what is your first name?
 read FIRST_NAME

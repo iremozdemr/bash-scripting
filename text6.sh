@@ -8,7 +8,6 @@ if [ $a == $b ]
     echo "a is equal to b"
 fi
 
-
 a=30
 b=40
 
@@ -18,7 +17,6 @@ if [ $a == $b ]
 else
     echo "a is not equal to b"
 fi
-
 
 car="bmw"
 

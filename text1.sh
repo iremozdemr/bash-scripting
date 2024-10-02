@@ -84,6 +84,37 @@
 
 # alias
 # bir komutun kısaltılmış halini oluşturmak için kullanılır
+# aynı adla alias tanımlanabilir
+# aynı adla tanımlanan komut kullanılırsa alias çalışır normal komut çalışmaz
+# aynı adla tanımlanan alias yerine normal komut çalıştırılmak istenirse başına / eklenir
+
+# csh:
+# alias emacs /home/myilmaz/emacs-23.4/src/emacs
+
+# bash:
+# alias emacs=/home/myilmaz/emacs-23.4/src/emacs
+
+# mv myfile1.txt myfile2.txt
+# dosyanın ismini değiştirir
+
+# mv myfile.txt /home
+# dosyayı taşır
+
+# cp myfile1.txt myfile2.txt
+# myfile2.txt dosyası yoksa dosyanın kopyasını oluşturur
+# myfile2.txt dosyası varsa içeriğini siler yeni içeriği yazar
+
+# cp -r dir1 dir2
+# klasörü kopyalar
+
+# rm myfile
+# dosyayı siler
+
+# rmdir mydir
+# boş klasörü siler
+
+# rmdir -r mydir
+# dolu klasörü siler
 
 # >
 # normal çıktıyı dosyaya yazar
