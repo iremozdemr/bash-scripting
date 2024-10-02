@@ -94,6 +94,54 @@
 # bash:
 # alias emacs=/home/myilmaz/emacs-23.4/src/emacs
 
+# stdin 0
+# stdout 1
+# stderr 2
+
+# | birden fazla komutu birleştirir
+# command1 | command2
+# ilk komutun çıktısını ikinci komutun girdisine verir
+# çoğu komutta (rm mkdir cp) | kullanılamaz bu yüzden xargs kullanılır
+
+# ls | wc -w
+# listelenen dosyalardaki toplam kelime sayısını hesaplar
+
+# ls | xargs wc -w
+# listelenen dosyalardaki kelime sayısını ayrı ayrı hesaplar
+
+# ls | xargs rm
+# listelenen tüm dosyalar rm komutuna iletilir ve bu dosyalar silinir
+
+# echo 'file1 file2 file3' | xargs mkdir
+# file1 file2 file3 adında 3 klasör oluşturur
+
+# wc filename
+# satır sayısını
+# kelime sayısını
+# bayt sayısını 
+# ekrana yazar
+
+# wc -l filename
+# satır sayısını ekrana yazar
+
+# wc -w filename
+# kelime sayısını ekrana yazar
+
+# wc -w text1.sh text2.sh
+# text1.sh dosyasının kelime sayısını
+# text2.sh dosyasının kelime sayısını
+# toplam kelime sayısını
+# ekrana yazar
+
+# wc -c filename
+# bayt sayısını ekrana yazar
+
+# wc -m filename
+# karakter sayısını ekrana yazar
+
+# wc -L filename
+# en uzun satırın uzunluğunu ekrana yazar
+
 # mv myfile1.txt myfile2.txt
 # dosyanın ismini değiştirir
 
@@ -115,6 +163,25 @@
 
 # rmdir -r mydir
 # dolu klasörü siler
+
+# find startinglocation -name filename
+# dosyayı arar
+
+# find . -name filename
+# dosyayı içinde bulunulan dizinde arar
+
+# touch myfile
+# böyle bir dosya yoksa yeni dosya oluşturur
+# böyle bir dosya varsa timestamp'i günceller
+
+# cat file1 file2
+# dosyaları birleştirir ve ekrana yazar
+
+# cat myfile
+# dosyanın içeriğini ekrana yazar
+
+# cat -n myfile
+# dosyanın içeriğini satır numaralarıyla ekrana yazar
 
 # >
 # normal çıktıyı dosyaya yazar
