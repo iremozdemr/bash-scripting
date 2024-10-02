@@ -1,20 +1,28 @@
 #!/bin/bash
 
+cat /etc/shells
+# kullanılabilecek shell'leri gösterir
+# başka bir shell'e geçmek için shell'in ismi yazılır
+
 which bash
-#bash interpreter'ın nerede olduğunu gösterir
+# bash interpreter'ın nerede olduğunu gösterir
 
 echo $SHELL
-#default interpreter'ı gösterir
+# default interpreter'ı gösterir
 
 file text10.sh
-#dosyanın nasıl bir dosya olduğunu gösterir
+# dosyanın nasıl bir dosya olduğunu gösterir
 
 date
-#tarihi yazar
+# tarihi yazar
 
 cal
-#takvimi gösterir
+# takvimi gösterir
 
 pwd
 
 ls
+
+env
+# environment variable'ları gösterir
+# environment variable'ların değerlerini gösterir

@@ -1,8 +1,30 @@
 #!/bin/bash
 
-# bash = bourne again shell:
+# regular files:
+# text files
+# data files
+# source codes
+# executables
+
+# not regular files:
+# directories (d)
+# special files (c or b)
+# links (l)
+# named pipes (p)
+# sockets (s)
+
+# shells:
+# sh = bourne shell
+# bash = bourne again shell
+# csh = c shell
+# tcsh = turbo shell
+# zsh = z shell
+
+# bash:
 # sh-compatible
 # command language interpreter
+# a superset of bourne shell
+# it is the default shell on most linux systems
 
 # shell:
 # macro processor
@@ -18,6 +40,12 @@
 # #!/bin/bash
 # #!/usr/bin/env bash
 
+# komutlar 3 parçadan oluşur
+# command option(s) arguments
+# bazı komutlarda option yoktur
+# option'ların başına - işareti konulmalıdır
+# bazı option'lar argument alır
+
 # chmod +x text.sh
 # dosyayı executable yapar
 
@@ -29,14 +57,33 @@
 # shebang belirtmeye gerek kalmadan
 # dosyayı çalıştırır
 
+# passwd
+# şu anki kullanıcı için şifreyi değiştirir
+
 # cd -
 # bir önceki bulunulan dizine gider
+
+# cd .
+# içinde bulunulan dizine gider
 
 # cd
 # home dizinine gider
 
 # cd ~
 # home dizinine gider
+
+# whatis
+# bir komut hakkında kısa bilgi verir
+
+# apropos
+# whatis veritabanında string'i arar
+
+# bazı komutların ayrı dokumentasyon'u yoktur
+# bu komutlara shell built in commands denir
+# mesela cd
+
+# alias
+# bir komutun kısaltılmış halini oluşturmak için kullanılır
 
 # >
 # normal çıktıyı dosyaya yazar
