@@ -19,3 +19,6 @@ echo "$@"
 
 echo "tum argumanlar :"
 echo "$*"
+
+echo hello $1 $2
+echo hello $3 $4

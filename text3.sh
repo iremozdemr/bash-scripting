@@ -26,7 +26,6 @@ echo $variable1 $variable2
 
 # unset kullanilarak variable silinir
 
-
 var1=2
 var2="2"
 var3=irem
@@ -35,9 +34,6 @@ var5='irem'
 var6=irem
 
 echo $var1 "$var2" $var3 $var4 $var5 ${var6}
-
-# variable tanimlanirken tirnak işareti kullanimi
-
 
 name="irem"
 age=18

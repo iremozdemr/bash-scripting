@@ -1,5 +1,7 @@
 #!/bin/bash
 
-echo hello $1 $2
-echo hello $3 $4
-# ./text2.sh irem ozdmr yazarak dosyayi calistir
+echo what is your first name?
+read FIRST_NAME
+echo what is your last name?
+read LAST_NAME
+echo hello $FIRST_NAME $LAST_NAME
