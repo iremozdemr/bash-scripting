@@ -94,6 +94,34 @@
 # bash:
 # alias emacs=/home/myilmaz/emacs-23.4/src/emacs
 
+# hard links:
+# dosyalar aynı fiziksel dosyayı kullanırlar
+# bir dosyada değişiklik yapıldığında diğer dosyalar da bunu görür
+# bir dosya silindiğinde diğer dosyalar var olmaya devam eder
+# link count = 0 olduğunda fiziksel dosya silinir
+# sadece aynı dosya sisteminde hard links kullanılır
+
+# soft links:
+# dosyalar farklı fiziksel dosyayı kullanırlar
+# bir dosya diğer dosyanın path'ini içerir
+# bir dosyada değişiklik yapıldığında diğer dosyalar da bunu görür
+
+# dosya izinleri:
+# 1. rwx -> user permissions
+# 2. rwx -> group permissions
+# 3. rwx -> others permissions
+# u -> user
+# g -> group
+# o -> others
+# 000 -> nothing
+# 001 -> execute
+# 010 -> write
+# 011 -> write/execute
+# 100 -> read
+# 101 -> read/execute
+# 110 -> read/write
+# 111 -> read/write/execute
+
 # stdin 0
 # stdout 1
 # stderr 2
