@@ -1,10 +1,13 @@
 #!/bin/bash
 
 # wildcards:
+# dosya isimlerinde kullanılır
+# klasör isimlerinde kullanılır
+
 # ? -> 1 karakter
 # * -> 0+ karakter
 # [] -> karakter listesi
-# ! -> olmayan karakterler
+# [!] -> olmayan karakterler
 # {} -> or ile bağlanan karakterler
 
 # special characters:
@@ -41,3 +44,5 @@ echo "$name passes $course with $grade"
 echo "$name passes \$course with $grade"
 # çıktı:
 # irem passes $course with 67
+
+ls *.sh
