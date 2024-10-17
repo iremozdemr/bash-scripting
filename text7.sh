@@ -5,7 +5,6 @@ do
     if [ $a == 5 ] 
         then
         break
-
     else
         echo "the number is: $a"
     fi
@@ -20,6 +19,17 @@ do
     else
         echo "the number is: $a"
     fi
+done
+
+names="emel ulku murat bulent"
+for name in $names
+do
+    echo "welcome $name"
+done
+
+for ((i=1; i<=5; i++))
+do
+    echo $i
 done
 
 i=1

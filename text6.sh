@@ -1,30 +1,10 @@
 #!/bin/bash
 
-a=10
-b=10
+function my_function {
+    echo "hello"
+    echo "hello $(whoami)"
+}
 
-if [ $a == $b ]
-    then
-    echo "a is equal to b"
-fi
+my_function
 
-a=30
-b=40
-
-if [ $a == $b ]
-    then
-    echo "a is equal to b"
-else
-    echo "a is not equal to b"
-fi
-
-car="bmw"
-
-case $car in
-    "mercedes")
-    echo "this is a mercedes";;
-    "bmw")
-    echo "this is a bmw";;
-    "audi")
-    echo "this is an audi";;
-esac
+my_function

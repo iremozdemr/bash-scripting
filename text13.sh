@@ -1,32 +1,36 @@
 #!/bin/bash
 
-# 0 = doğru
-# 1 = yanlış
-
-a=2
-b=3
-
-if [ $a -lt $b ]; then
-    echo "$a is less than $b"
+x=5
+y=5
+if [ $x = 5 ] && [ $y = 5 ]; then
+    echo "iki sayi da 5'e eşit"
 fi
 
-a=4
-b=2
-
-if [ $a -gt $b ]; then
-    echo "$a is greater than $b"
+x=5
+y=5
+if [ $x = 5 -a $y = 5 ]; then
+    echo "iki sayi da 5'e eşit"
 fi
 
-a=4
-b=4
-
-if [ $a -eq $b ]; then
-    echo "$a is equal to $b"
+x=5
+y=5
+if [ $x = 5 ] || [ $y = 5 ]; then
+    echo "sayilardan biri 5'e eşit"
 fi
 
-a=4
-b=5
+x=5
+y=5
+if [ $x = 5 -o $y = 5 ]; then
+    echo "sayilardan biri 5'e eşit"
+fi
 
-if [ $a -ne $b ]; then
-    echo "$a is not equal to $b"
+x=4
+if [ ! $x = 5 ]; then
+    echo "x 5'e eşit değil"
+fi
+
+x=5
+y=4
+if [ \( $x = 5 \) ] && [ \( $y = 4 \) ]; then
+    echo "x = 5 ve y = 4"
 fi

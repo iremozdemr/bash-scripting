@@ -10,6 +10,11 @@ which bash
 echo $SHELL
 # default interpreter'ı gösterir
 
+echo "directory name: $PWD"
+#doğru kullanım
+echo "directory name: $pwd"
+#yanlış kullanım
+
 file text10.sh
 # dosyanın nasıl bir dosya olduğunu gösterir
 
