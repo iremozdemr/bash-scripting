@@ -1,29 +1,26 @@
 #!/bin/bash
 
-echo {a,b,c,d,e}
-#çıktı:
-#a b c d e
+#global variable:
+#script'in içinde her yerde kullanılabilir
 
-echo {50..55}
-#çıktı:
-#50 51 52 53 54 55
+#local variable:
+#sadece tanımlandığı fonksiyonun içinde kullanılabilir
 
-echo {8..2}
-#çıktı:
-#8 7 6 5 4 3 2
+MYVARIABLE="global variable"
 
-echo {A..E}
-#çıktı:
-#A B C D E
+function myFunction {
+    local MYVARIABLE="local variable"
+    echo $MYVARIABLE
+}
 
-echo {040..044}
+echo $MYVARIABLE
 #çıktı:
-#40 41 42 43 44
+#global variable
 
-echo {A..C}{1..3}
+myFunction
 #çıktı:
-#A1 A2 A3 B1 B2 B3 C1 C2 C3
+#local variable
 
-echo "hi "{ali,merve,selim}""
+echo $MYVARIABLE
 #çıktı:
-#hi ali hi merve hi selim
+#global variable

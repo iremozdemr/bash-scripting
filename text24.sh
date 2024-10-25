@@ -1,12 +1,21 @@
 #!/bin/bash
 
-car="bmw"
+# exit:
+# kodun çalışmasını sonlandırır
+# default olarak exit 0
 
-case $car in
-    "mercedes")
-    echo "this is a mercedes";;
-    "bmw")
-    echo "this is a bmw";;
-    "audi")
-    echo "this is an audi";;
-esac
+# exit 0:
+# başarılı çıkış
+
+# exit 1:
+# başarısız çıkış
+
+# trap:
+# exit'den sonra çalışır
+
+echo "hello"
+
+trap 'echo $?' EXIT
+# trap 'echo "bitti"' EXIT
+
+exit 57

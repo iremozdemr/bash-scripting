@@ -1,35 +1,29 @@
 #!/bin/bash
 
-# %s
-# string
-
-# %d
-# int
-
-# %f
-# float
-
-# %x
-# hex int
-
-printf "%s" "hello" "bil214" "students"
+echo {a,b,c,d,e}
 #çıktı:
-#hellobil214students
+#a b c d e
 
-printf "\n %s" "hello" "bil214" "students"
+echo {50..55}
 #çıktı:
-#hello
-#bil214
-#students
+#50 51 52 53 54 55
 
-printf "\n %f" 1.2 3 4
+echo {8..2}
 #çıktı:
-#1.200000
-#3.000000
-#4.000000
+#8 7 6 5 4 3 2
 
-printf "\n %d" 1 2 3
+echo {A..E}
 #çıktı:
-#1
-#2
-#3
+#A B C D E
+
+echo {040..044}
+#çıktı:
+#40 41 42 43 44
+
+echo {A..C}{1..3}
+#çıktı:
+#A1 A2 A3 B1 B2 B3 C1 C2 C3
+
+echo "hi "{ali,merve,selim}""
+#çıktı:
+#hi ali hi merve hi selim

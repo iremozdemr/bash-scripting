@@ -1,10 +1,12 @@
 #!/bin/bash
 
-function my_function {
-    echo "hello"
-    echo "hello $(whoami)"
-}
+car="bmw"
 
-my_function
-
-my_function
+case $car in
+    "mercedes")
+    echo "this is a mercedes";;
+    "bmw")
+    echo "this is a bmw";;
+    "audi")
+    echo "this is an audi";;
+esac

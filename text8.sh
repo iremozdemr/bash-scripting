@@ -1,26 +1,35 @@
 #!/bin/bash
 
-#global variable:
-#script'in içinde her yerde kullanılabilir
+# %s
+# string
 
-#local variable:
-#sadece tanımlandığı fonksiyonun içinde kullanılabilir
+# %d
+# int
 
-MYVARIABLE="global variable"
+# %f
+# float
 
-function myFunction {
-    local MYVARIABLE="local variable"
-    echo $MYVARIABLE
-}
+# %x
+# hex int
 
-echo $MYVARIABLE
+printf "%s" "hello" "bil214" "students"
 #çıktı:
-#global variable
+#hellobil214students
 
-myFunction
+printf "\n %s" "hello" "bil214" "students"
 #çıktı:
-#local variable
+#hello
+#bil214
+#students
 
-echo $MYVARIABLE
+printf "\n %f" 1.2 3 4
 #çıktı:
-#global variable
+#1.200000
+#3.000000
+#4.000000
+
+printf "\n %d" 1 2 3
+#çıktı:
+#1
+#2
+#3
